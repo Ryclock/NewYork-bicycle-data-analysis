@@ -1,0 +1,9 @@
+# images
+cluster_assess/Figures/
+
+# data
+data/*
+!data/original/
+
+# production
+preliminary.html

@@ -1,0 +1,51 @@
+.hide {
+    display: none;
+}
+
+.Box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.toolbar div {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.toolbar button {
+    margin: 0 5px;
+}
+
+#trafficFilter input {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.chart-container {
+    width: 1200px;
+    height: 500px;
+}
+
+.chart-container#calendar {
+    height: 300px;
+}
+
+/* 去除百度地图水印文字 */
+.BMap_cpyCtrl {
+    display: none;
+}
+
+/* 去除百度地图logo */
+.anchorBL {
+    display: none;
+}
+
+.title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: bold;
+}
+
+#detail .content {
+    border: 3px inset;
+}

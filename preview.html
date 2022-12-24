@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/display.css">
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/bmap.min.js"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&ak=M98sRd8ltiZpeQRi8w3QtqZGN0I56MdD"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/getscript?v=2.0&ak=M98sRd8ltiZpeQRi8w3QtqZGN0I56MdD"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.3/math.js"></script>
+    <script type="text/javascript" src="./static/component/My97DatePicker/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="./static/js/drawBMap.js"></script>
+    <script type="text/javascript" src="./static/js/drawCalendar.js"></script>
+    <title>时空聚类&时域聚类</title>
+</head>
+
+<body>
+    <div id="calendarBox" class="Box">
+        <div class="toolbar">
+            <div id="calendarPicker">
+                <span class="title">Display time-domain:</span>
+                <button>2019</button>
+                <button>2020</button>
+            </div>
+        </div>
+        <div id="calendar" class="chart-container"></div>
+    </div>
+    <div id="bmapBox" class="Box">
+        <div class="toolbar">
+            <div id="datePicker">
+                <span id="date">xxxx-xx-xx</span>
+                <img onclick="WdatePicker({el:'date'})"
+                    src="./static/component/My97DatePicker/My97DatePicker/skin/datePicker.gif" width="16" height="22"
+                    align="absmiddle" style="cursor:pointer">
+            </div>
+            <div id="trafficFilter">
+                <span class="title">Traffic range:</span>
+                <input id="min_value" type="text">
+                <span>——</span>
+                <input id="max_value" type="text" disabled>
+                <button class="submit">submit</button>
+            </div>
+        </div>
+        <div id="bmap" class="chart-container"></div>
+        <div id="detail">
+            <span class="title">Detail traffic</span>
+            <div class="content"></div>
+        </div>
+    </div>
+</body>
+
+</html>
